@@ -1,0 +1,210 @@
+.help__wrapper {
+  max-width: 1426px;
+  width: 100%;
+  height: 851px;
+  background-image: linear-gradient(
+      180deg,
+      #ffffff 0%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    url(../../../assets/images/help_bg.png);
+  background-repeat: no-repeat;
+  border-radius: 36px;
+  border: 7px solid rgba(231, 231, 231, 0.78) 37.09%;
+  margin-top: 70px;
+  display: flex;
+  padding-top: 100px;
+  padding-left: 50px;
+
+  &__form {
+    max-width: 549px;
+    width: 100%;
+    height: 525px;
+    border-radius: 22px;
+    background-color: $secondary-color;
+    margin-right: 129px;
+    padding-left: 35px;
+    padding-top: 35px;
+
+    h2 {
+      font-weight: 700;
+      font-size: 50px;
+      line-height: 69px;
+      letter-spacing: 0%;
+      color: $primary-color;
+      margin-bottom: 24px;
+    }
+    p {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 26px;
+      letter-spacing: 0%;
+      color: $primary-color;
+      margin-bottom: 36px;
+    }
+    &__phone {
+      margin-bottom: 15px;
+      input {
+        width: 449px;
+        height: 72px;
+        font-size: 22px;
+        padding: 0 20px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        box-sizing: border-box;
+      }
+    }
+    &__button {
+      display: flex;
+      gap: 42px;
+
+      button {
+        width: 286px;
+        height: 72px;
+        border-radius: 14px;
+        background-color: $primary-color-red;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        color: $secondary-color;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+
+        &:hover {
+          background-color: rgb(255, 74, 74);
+        }
+      }
+    }
+  }
+  &__info {
+    &__content {
+      display: flex;
+      gap: 80px;
+
+      div {
+        img {
+          border: 3px solid #fa002c26;
+          border-radius: 10px;
+          cursor: pointer;
+          margin-bottom: 16px;
+
+          &:hover {
+            border: 3px solid red;
+          }
+        }
+        p {
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 26px;
+          letter-spacing: 0%;
+          color: $primary-color;
+          margin-bottom: 45px;
+        }
+      }
+    }
+  }
+}
+
+.help__mobile {
+    display: none;
+  &__sections {
+    margin-top: 60px;
+    &__card {
+      max-width: 328px;
+      width: 100%;
+      height: 160px;
+      border-radius: 16px;
+      box-shadow: 0px 2px 30px 0px #0000001f;
+      background-color: $secondary-color;
+      margin-bottom: 10px;
+      padding: 20px;
+
+      img {
+        border: 3px solid #fa002c26;
+        border-radius: 10px;
+        cursor: pointer;
+        margin-bottom: 16px;
+        padding: 2px;
+
+        &:hover {
+          border: 3px solid red;
+        }
+      }
+      p {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: 0%;
+        color: $primary-color;
+      }
+    }
+  }
+  &__content {
+    h2 {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 34px;
+      letter-spacing: 0%;
+      margin-bottom: 14px;
+    }
+    p {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 22px;
+      letter-spacing: 0%;
+      color: #3d3d3d;
+      margin-bottom: 24px;
+    }
+    &__form {
+      background: url(../../../assets/images/help_mob_bg.png) no-repeat;
+      max-width: 359px;
+      width: 100%;
+      height: 310px;
+      text-align: center;
+
+      &__phone {
+        margin-bottom: 16px;
+        input {
+          width: 328px;
+          height: 72px;
+          font-size: 16px;
+          padding: 0 20px;
+          font-weight: 700;
+          color: $primary-color;
+          border: 1px solid #ccc;
+          border-radius: 10px;
+          box-sizing: border-box;
+        }
+      }
+      button {
+        width: 328px;
+        height: 72px;
+        border-radius: 14px;
+        background-color: $primary-color-red;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        color: $secondary-color;
+        box-shadow: 0px 12px 60px 0px #FA002C66;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+
+        &:hover {
+          background-color: rgb(255, 74, 74);
+        }
+      }
+    }
+  }
+}
+
+@include mobile() {
+  .help__wrapper {
+    display: none;
+  }
+  .help__mobile {
+    display: flex;
+    flex-direction: column;
+  }
+}

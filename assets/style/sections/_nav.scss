@@ -2,6 +2,7 @@
   max-width: 1920px;
   width: 100%;
   height: 840px;
+  margin: 0 auto;
   backdrop-filter: blur(100px);
   background-image: linear-gradient(
       180deg,
@@ -140,6 +141,7 @@
 .nav__mob {
   backdrop-filter: blur(100px);
   display: none;
+  margin: 0 auto;
   background-image: linear-gradient(
       180deg,
       #ffffff 0%,
