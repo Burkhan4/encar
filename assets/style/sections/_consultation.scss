@@ -1,0 +1,124 @@
+.consultation__wrapper {
+  max-width: 1426px;
+  width: 100%;
+  height: 533px;
+  border-radius: 29px;
+  margin-top: 150px;
+  border: 7px solid #e7e7e7;
+  padding: 64px;
+  margin-right: 10px;
+  margin-left: 10px;
+  background-image: linear-gradient(
+      90deg,
+      #ffffff 0%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    url(../../../assets/images/consultation_bg.png);
+  background-repeat: no-repeat;
+
+  h2 {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 69px;
+    letter-spacing: 0%;
+    color: $primary-color;
+    margin-bottom: 24px;
+    span {
+      color: $primary-color-red;
+    }
+  }
+  p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0%;
+    color: #292929;
+    margin-bottom: 50px;
+  }
+  button {
+    width: 301px;
+    height: 72px;
+    border-radius: 14px;
+    background-color: $primary-color-red;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: $secondary-color;
+    box-shadow: 0px 12px 60px 0px #fa002c66;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      background-color: rgb(255, 74, 74);
+    }
+  }
+  &__mobile {
+    margin-top: 100px;
+    display: none;
+    margin-bottom: 20px;
+
+    h2 {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 34px;
+      letter-spacing: 0%;
+      margin-bottom: 16px;
+      span {
+        color: $primary-color-red;
+      }
+    }
+    p {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 22px;
+      letter-spacing: 0%;
+      color: #292929;
+      margin-bottom: 24px;
+    }
+    &__img {
+      max-width: 360px;
+      width: 100%;
+      height: 305px;
+      border-radius: 24px;
+      padding-top: 38px;
+      text-align: center;
+
+      background-image: linear-gradient(
+          180deg,
+          #ffffff 0%,
+          rgba(255, 255, 255, 0) 100%
+        ),
+        url(../../../assets/images/consultationbg_mobile.png);
+      background-repeat: no-repeat;
+      button {
+        width: 328px;
+        height: 72px;
+        border-radius: 14px;
+        background-color: $primary-color-red;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        color: $secondary-color;
+        box-shadow: 0px 12px 60px 0px #fa002c66;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+
+        &:hover {
+          background-color: rgb(255, 74, 74);
+        }
+      }
+    }
+  }
+}
+
+@include mobile() {
+  .consultation__wrapper {
+    display: none;
+    &__mobile {
+        display: flex;
+        flex-direction: column;
+    }
+  }
+}

@@ -1,0 +1,115 @@
+.contact__wrapper {
+  padding-top: 117px;
+  margin: 0 auto;
+  h2 {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 69px;
+    letter-spacing: 0%;
+    margin-bottom: 32px;
+  }
+  &__content {
+    display: flex;
+    gap: 28px;
+    &__card {
+      width: 706px;
+      height: 498px;
+      border-radius: 36px;
+      border: 7px solid #fa002c33;
+      padding: 17px;
+
+      &-info {
+        display: flex;
+        padding-left: 24px;
+        padding-right: 24px;
+        padding-top: 24px;
+        justify-content: space-between;
+        align-items: end;
+        margin-top: 10px;
+        margin-bottom: 14px;
+        h3 {
+          font-weight: 500;
+          font-size: 30px;
+          line-height: 100%;
+          letter-spacing: 0%;
+        }
+        p {
+          font-weight: 600;
+          font-size: 30px;
+          line-height: 100%;
+          letter-spacing: 0%;
+          color: $primary-color;
+        }
+      }
+      &-locatin {
+        display: flex;
+        gap: 6px;
+        align-items: center;
+        margin-left: 24px;
+      }
+    }
+  }
+  &__mobile {
+    display: none;
+    flex-direction: column;
+    padding-left: 15px;
+    gap: 16px;
+    &__card {
+      max-width: 328px;
+      width: 100%;
+      height: 498px;
+      border-radius: 24px;
+      border: 7px solid #fa002c33;
+      padding: 5px;
+      h3 {
+        margin-top: 16px;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 30px;
+        letter-spacing: 0%;
+        margin-left: 12px;
+      }
+      p {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 30px;
+        letter-spacing: 0%;
+        color: $primary-color;
+        margin-top: 10px;
+        margin-bottom: 12px;
+        margin-left: 12px;
+      }
+      &-location {
+        display: flex;
+        margin-left: 12px;
+        gap: 6px;
+        p {
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 22px;
+          letter-spacing: 0%;
+          color: #292929;
+        }
+      }
+    }
+  }
+}
+
+@include mobile() {
+  .contact {
+    background-color: #f4f6f8;
+  }
+  .contact__wrapper {
+    padding-top: 40px;
+    h2 {
+      font-size: 24px;
+      margin-bottom: 24px;
+    }
+    &__content {
+        display: none;
+    }
+    &__mobile {
+        display: flex;
+    }
+  }
+}
