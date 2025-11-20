@@ -1,0 +1,200 @@
+.footer {
+  margin: 0 auto;
+  max-width: 1920px;
+  width: 100%;
+  height: 287px;
+  background-color: #eeeeee;
+  padding-top: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 30px 30px 0px 0px;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    &__logo_section {
+      p {
+        margin-left: 17px;
+        margin-top: 16px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: 0%;
+        color: #292929;
+      }
+    }
+    &__sections {
+      margin-top: 9px;
+      ul {
+        a {
+          li {
+            font-weight: 500;
+            margin-bottom: 16px;
+            font-size: 18px;
+            line-height: 26px;
+            letter-spacing: 0%;
+            color: $primary-color;
+            transition: transform 0.2s ease;
+            &:hover {
+              transform: scale(1.1);
+              color: #ff0000;
+            }
+          }
+        }
+      }
+    }
+    &__second_sections {
+      margin-top: 9px;
+      margin-right: 200px;
+      ul {
+        a {
+          li {
+            font-weight: 500;
+            margin-bottom: 16px;
+            font-size: 18px;
+            line-height: 26px;
+            letter-spacing: 0%;
+            color: $primary-color;
+            transition: transform 0.2s ease;
+            &:hover {
+              transform: scale(1.1);
+              color: #ff0000;
+            }
+          }
+        }
+      }
+    }
+    &__button {
+      margin-top: 9px;
+      button {
+        width: 236px;
+        height: 58px;
+        margin-bottom: 16px;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        padding-left: 27px;
+        border-radius: 14px;
+        background-color: $primary-color-red;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        color: $secondary-color;
+        box-shadow: 0px 12px 60px 0px #fa002c66;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+        img {
+          width: 20px;
+          height: 20px;
+        }
+
+        &:hover {
+          background-color: rgb(255, 74, 74);
+        }
+      }
+      &-location {
+        display: flex;
+        gap: 6px;
+        align-items: start;
+        p {
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 22px;
+          letter-spacing: 0%;
+          color: #292929;
+        }
+      }
+    }
+    &__mobile {
+        display: none;
+      p {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: 0%;
+        color: #292929;
+        margin-top: 16px;
+        margin-bottom: 24px;
+        margin-left: 17px;
+      }
+      button {
+        width: 328px;
+        height: 58px;
+        margin-bottom: 16px;
+        margin-left: 17px;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        justify-content: center;
+        border-radius: 14px;
+        background-color: $primary-color-red;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        color: $secondary-color;
+        box-shadow: 0px 12px 60px 0px #fa002c66;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+        img {
+          width: 20px;
+          height: 20px;
+        }
+
+        &:hover {
+          background-color: rgb(255, 74, 74);
+        }
+      }
+      &-location {
+        display: flex;
+        margin-left: 17px;
+        align-items: start;
+        gap: 6px;
+        p {
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 22px;
+          letter-spacing: 0%;
+          margin-top: 0px;
+        }
+      }
+      &__section_list {
+        margin-left: 17px;
+        a {
+          li {
+            font-weight: 500;
+            margin-bottom: 16px;
+            font-size: 18px;
+            line-height: 26px;
+            letter-spacing: 0%;
+            color: $primary-color;
+            transition: transform 0.2s ease;
+            &:hover {
+              color: #ff0000;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include mobile() {
+  .footer {
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    max-width: 380px;
+    height: 713px;
+    margin-top: 40px;
+    &__wrapper {
+        display: none;
+        &__mobile {
+        display: flex;
+        flex-direction: column;
+    }
+    }
+  }
+}

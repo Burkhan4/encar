@@ -11,6 +11,7 @@
   &__content {
     display: flex;
     gap: 28px;
+    margin-bottom: 110px;
     &__card {
       width: 706px;
       height: 498px;
@@ -53,6 +54,7 @@
     display: none;
     flex-direction: column;
     padding-left: 15px;
+    margin-bottom: 40px;
     gap: 16px;
     &__card {
       max-width: 328px;
